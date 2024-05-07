@@ -1,0 +1,465 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x36D81bF712162F6505f67B799514e71341B5Ee4C",
+      "txHash": "0x1e3b60b22f411aec1cea2557a769c9ea3119147cd418975469602ddce2517169",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xaA54b3aE6669E764A705215001CFda290560Ed0F",
+      "txHash": "0xdb5b732339232375577e9f37f0364f780e97702ce45445d3f1724dd214bc2abf",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x86f610F28c7fFaA207d1FE02b21a469832e8fe52",
+      "txHash": "0xcf524e0ea61f5671aaefb0265ba448baf79ad9f736d6b070affd0667b42ea6da",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9A69a19FBB73473470B2f59eD706A23faD0B0D63",
+      "txHash": "0xd1cf69828aef8140a81d50381c8f946b76b330b3dbb5c74145472bb87b33f161",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0c94A08ee6C53F25F1C800388F296c448361F0e4",
+      "txHash": "0x2c4fce55248275b110ec4ca4b3d7e1cd1786e4458abbdc9f658fcfb49d920b53",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xd96a61Dc59E79510cC06BdE91887607be9f24990",
+      "txHash": "0x3171b0408515ceb563d122d15feb7cedf7242e35591aeaf593a573dd48e01527",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x783985b485B0a60449b19eD4262Cd6a4656Dd2c1",
+      "txHash": "0x8c8e1a58f1845631c90ab852ab9d88a004101f950ec6c017434e233a25247022",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xAD84f50c6E1B1CB0045035122e00b5876409B685",
+      "txHash": "0x8be83c5a4e7d3e837f4d0e42bc5cc159353bce51047beaf499803bbcba661d38",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x23E053e31EA6c2dd3CCAE1c3B5a009146fCFA50C",
+      "txHash": "0xd132f8b84fcbf193375fbf6bdd1b627afa89ec9cc6ecdf86865bbf52a09fe06f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8E49024cAc8741f8FF1c6F6e257DF5D4F308ac43",
+      "txHash": "0x55017628583a36a04aa08cb4455b4fa1500113244a9a9cf256ac35c1e8ae1579",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "6d9530f40ae0ef74979ab2e44f12b3a68636cad9333b5982c7c2d40c8981c415": {
+      "address": "0x5081aeeE181E81627c97F8eB5dd2CD2317675E00",
+      "txHash": "0xdbdfd620dc14a420a95279bbe777562208a684895e7f96927a57e37312f96fba",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "number",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "V1",
+            "src": "contracts/v1.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "032fa8fab564c0edf27aae9263d260a3ee9ecae19deb4c84a409eea93795fa24": {
+      "address": "0x3017DBFEcAe2E6e3610Cf3F87dd2Fc54e1cd16C8",
+      "txHash": "0xd544c17816a6693f28d3404a4fbd8b9407c5742e38d47f1fa9abf6ae48ea1674",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "implementations",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_bytes4,t_address)",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:10"
+          },
+          {
+            "label": "transferContract",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(Transfer)3696",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:12"
+          },
+          {
+            "label": "nftContract",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(Nft)3469",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:13"
+          },
+          {
+            "label": "voteContract",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(Vote)4000",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bytes4": {
+            "label": "bytes4",
+            "numberOfBytes": "4"
+          },
+          "t_contract(Nft)3469": {
+            "label": "contract Nft",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Transfer)3696": {
+            "label": "contract Transfer",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Vote)4000": {
+            "label": "contract Vote",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_bytes4,t_address)": {
+            "label": "mapping(bytes4 => address)",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "9df59f75b184f74a5675fd2cb72f76af3e6898e3e1dbec4d76ac0da3dc44b43c": {
+      "address": "0xb9346cd23c2D578Ba67d5D776B132e12C08ef223",
+      "txHash": "0x7af28f1b50e3545913bf0cb090a079026f7e3883a755548eb00f38992f712502",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "implementations",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_bytes4,t_address)",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:10"
+          },
+          {
+            "label": "transferContract",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(Transfer)3829",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:12"
+          },
+          {
+            "label": "nftContract",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(Nft)3469",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:13"
+          },
+          {
+            "label": "voteContract",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(Vote)4133",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bytes4": {
+            "label": "bytes4",
+            "numberOfBytes": "4"
+          },
+          "t_contract(Nft)3469": {
+            "label": "contract Nft",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Transfer)3829": {
+            "label": "contract Transfer",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Vote)4133": {
+            "label": "contract Vote",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_bytes4,t_address)": {
+            "label": "mapping(bytes4 => address)",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "c089abfd418c36f960cee23c8d16d4d4669928effe5e9553a5ba6fd37f7915f3": {
+      "address": "0xAE146CDa159d4a8AAD1a87f9d4169F7b9c7d3Dd5",
+      "txHash": "0xfc197948baef47829fa95ed27b16cc3fce6c3440002510cff3c6e07833b01abe",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "implementations",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_bytes4,t_address)",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:10"
+          },
+          {
+            "label": "transferContract",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(Transfer)3844",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:12"
+          },
+          {
+            "label": "nftContract",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(Nft)3469",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:13"
+          },
+          {
+            "label": "voteContract",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(Vote)4204",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bytes4": {
+            "label": "bytes4",
+            "numberOfBytes": "4"
+          },
+          "t_contract(Nft)3469": {
+            "label": "contract Nft",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Transfer)3844": {
+            "label": "contract Transfer",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Vote)4204": {
+            "label": "contract Vote",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_bytes4,t_address)": {
+            "label": "mapping(bytes4 => address)",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "92716c85c00ca2d0719519754751eed209a22c6fb03ac3086163a6a88301dd31": {
+      "address": "0xee1E26bBc90723bc777F2F4896e92e758F1C295d",
+      "txHash": "0x55885a93470cfa8d3455fdcf4520a4ba87ce4cf7b1af35a7552e22ef47f627f7",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "implementations",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_bytes4,t_address)",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:10"
+          },
+          {
+            "label": "transferContract",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(Transfer)3844",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:12"
+          },
+          {
+            "label": "nftContract",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(Nft)3469",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:13"
+          },
+          {
+            "label": "voteContract",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(Vote)4204",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bytes4": {
+            "label": "bytes4",
+            "numberOfBytes": "4"
+          },
+          "t_contract(Nft)3469": {
+            "label": "contract Nft",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Transfer)3844": {
+            "label": "contract Transfer",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Vote)4204": {
+            "label": "contract Vote",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_bytes4,t_address)": {
+            "label": "mapping(bytes4 => address)",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "5bd74a3cf7b91569654454d4c82f5565efe6ffa409e2273ff38c923b0ab732dc": {
+      "address": "0x929d4EE874ff675232707032b6f2d35629694541",
+      "txHash": "0xc460ff0878f824de8cf10d8bdf8173a00d6339436e721e5c6c07607006e02a95",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "implementations",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_bytes4,t_address)",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:9"
+          },
+          {
+            "label": "transferContract",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(Transfer)336",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:11"
+          },
+          {
+            "label": "voteContract",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(Vote)685",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:13"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bytes4": {
+            "label": "bytes4",
+            "numberOfBytes": "4"
+          },
+          "t_contract(Transfer)336": {
+            "label": "contract Transfer",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Vote)685": {
+            "label": "contract Vote",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_bytes4,t_address)": {
+            "label": "mapping(bytes4 => address)",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "02c0db4fa3bb051c55dbb6c0ed387514466b68c8d1a891e179da9642276d67fd": {
+      "address": "0xd8A69806d1EeCd1f2716cb0D38C5426139dE139D",
+      "txHash": "0x8ed65399cdfccc12edb192b1a8416373de80aeb44a7eefd22ffdf86d998e9016",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "implementations",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_bytes4,t_address)",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:9"
+          },
+          {
+            "label": "transferContract",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(Transfer)338",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:11"
+          },
+          {
+            "label": "voteContract",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(Vote)686",
+            "contract": "Proxy",
+            "src": "contracts/Proxy.sol:13"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bytes4": {
+            "label": "bytes4",
+            "numberOfBytes": "4"
+          },
+          "t_contract(Transfer)338": {
+            "label": "contract Transfer",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Vote)686": {
+            "label": "contract Vote",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_bytes4,t_address)": {
+            "label": "mapping(bytes4 => address)",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
